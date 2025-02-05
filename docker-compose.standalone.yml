@@ -50,6 +50,7 @@ services:
       - API_PATH_PREFIX=/api
     env_file:
       - .env
+    exclude_from_hc: true
     working_dir: /zeppelin/backend
     command: ["npm", "run", "migrate-prod"]
 
